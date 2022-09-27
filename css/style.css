@@ -1,0 +1,279 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+ul li {
+  list-style-type: none;
+  display: inline-block; }
+
+a {
+  color: #FFF;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  display: block;
+  padding: 15px; }
+  a:hover {
+    color: #3A93F3; }
+
+.main-btn {
+  font-size: 22px;
+  background-color: #3A93F3;
+  color: #FFF;
+  font-weight: bold;
+  width: auto;
+  display: inline-block;
+  border: 1px solid #3A93F3; }
+  .main-btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff; }
+
+.flex-class {
+  display: flex;
+  justify-content: space-between; }
+
+.grid-class {
+  display: grid;
+  grid-template-columns: auto auto auto; }
+
+input {
+  border: none;
+  margin: 10px auto;
+  padding: 5px; }
+  input:focus {
+    outline: none; }
+
+.navBar, .main-header {
+  background-color: #000;
+  color: #FFF; }
+  .navBar .content, .main-header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navBar .content .margin-right ul, .main-header .content .margin-right ul {
+      min-width: 105px;
+      display: flex;
+      justify-content: space-between; }
+
+.main-header {
+  background-color: rgba(0, 0, 0, 0.767); }
+  .main-header .logo {
+    font-weight: bold;
+    font-size: 30px; }
+  .main-header a {
+    font-size: 18px; }
+
+.footer {
+  background-color: #160e2c;
+  color: #eee; }
+  .footer .collectins {
+    display: grid;
+    grid-template-columns: auto auto auto auto; }
+    .footer .collectins .quarter-box {
+      padding: 10px;
+      margin-top: 20px; }
+      .footer .collectins .quarter-box .title-box {
+        color: #3A93F3;
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px; }
+      .footer .collectins .quarter-box .list {
+        display: flex;
+        justify-content: space-between; }
+        .footer .collectins .quarter-box .list li a {
+          background-color: rgba(238, 238, 238, 0.479);
+          margin: 13px auto;
+          font-size: 20px;
+          padding: 12px 15px; }
+        .footer .collectins .quarter-box .list li:not(:first-of-type) a {
+          margin: 13px 10px; }
+        .footer .collectins .quarter-box .list li:first-of-type a {
+          margin-right: 10px; }
+      .footer .collectins .quarter-box .gallery-box {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        overflow: hidden;
+        gap: 10px; }
+        .footer .collectins .quarter-box .gallery-box img {
+          width: 50px;
+          height: 50px; }
+      .footer .collectins .quarter-box form input {
+        width: 100%;
+        display: block;
+        background-color: #585656c2;
+        color: #FFF;
+        font-size: 22px;
+        margin-bottom: 17px;
+        border-radius: 10px; }
+        .footer .collectins .quarter-box form input.main-btn {
+          background-color: #3A93F3; }
+      .footer .collectins .quarter-box .links-list li {
+        width: 100%; }
+        .footer .collectins .quarter-box .links-list li a {
+          padding: 8px;
+          font-size: 17px;
+          border-bottom: 1px solid #83808094; }
+  .footer .connect-us {
+    border-top: 1px solid #eee;
+    margin: 20px auto;
+    padding-top: 20px; }
+    .footer .connect-us .connect-box {
+      display: grid;
+      grid-template-columns: auto auto;
+      margin: 10px;
+      padding: 22px;
+      background-color: #6666666b; }
+      .footer .connect-us .connect-box .icon {
+        grid-area: 25%;
+        font-size: 25px;
+        margin: auto;
+        background-color: #3A93F3;
+        color: #FFF;
+        width: 55px;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .footer .connect-us .connect-box .details {
+        grid-area: 75%;
+        display: grid;
+        align-items: center; }
+        .footer .connect-us .connect-box .details .title {
+          color: #FFF;
+          font-weight: bold; }
+        .footer .connect-us .connect-box .details .sub-details {
+          color: #cbcbcba9; }
+  .footer .copy-right {
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px; }
+
+.slide-show {
+  text-align: center;
+  background-image: url(../img/anime-boys-urban-train-anime-wallpaper-preview.jpg);
+  background-size: cover;
+  height: 90vh; }
+  .slide-show .carousel-item {
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 90vh;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 200px; }
+    .slide-show .carousel-item p {
+      font-size: 40px; }
+    .slide-show .carousel-item .main-btn {
+      margin: 0 10px;
+      margin-top: 20px; }
+
+.section {
+  padding: 50px; }
+  .section .sec-head {
+    text-align: center; }
+    .section .sec-head .sec-title {
+      font-size: 27px;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    .section .sec-head .sec-discription {
+      font-size: 20px; }
+  .section.feature-section .sec-content, .section.blog-section .sec-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 40px;
+    text-align: center; }
+    .section.feature-section .sec-content .quarter-box, .section.blog-section .sec-content .quarter-box {
+      margin-top: 25px;
+      padding: 40px 6px;
+      box-shadow: 0 0 10px #eee; }
+      .section.feature-section .sec-content .quarter-box .box-title, .section.blog-section .sec-content .quarter-box .box-title {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 49px; }
+      .section.feature-section .sec-content .quarter-box .icon, .section.blog-section .sec-content .quarter-box .icon {
+        background-color: #3A93F3;
+        color: #FFF;
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        margin: 10px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+
+.blog-section .quarter-box {
+  text-align: left;
+  padding: 0 0 !important;
+  padding-bottom: 30px !important; }
+  .blog-section .quarter-box .box-content {
+    padding: 10px; }
+  .blog-section .quarter-box .box-title {
+    font-size: 23px !important; }
+.blog-section .image img {
+  width: 100%; }
+
+.team-section, .srvice-section {
+  background-color: #484c85;
+  color: #FFF;
+  padding: 100px 0 !important; }
+  .team-section .box-title:first-of-type, .srvice-section .box-title:first-of-type {
+    margin-bottom: 35px;
+    font-size: 25px; }
+  .team-section .sec-head .sec-title, .srvice-section .sec-head .sec-title {
+    margin-bottom: 65px; }
+  .team-section .sec-content, .srvice-section .sec-content {
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px; }
+    .team-section .sec-content .box-title:not(:first-of-type), .srvice-section .sec-content .box-title:not(:first-of-type) {
+      text-align: center;
+      margin-top: 15px; }
+      .team-section .sec-content .box-title:not(:first-of-type) .name, .srvice-section .sec-content .box-title:not(:first-of-type) .name {
+        font-size: 18px;
+        font-weight: bold; }
+    .team-section .sec-content .quarter-box .image img, .srvice-section .sec-content .quarter-box .image img {
+      width: 100%; }
+    .team-section .sec-content .quarter-box .main-btn, .srvice-section .sec-content .quarter-box .main-btn {
+      margin-top: 15px;
+      padding: 5px 26px;
+      font-weight: normal;
+      border-radius: 5px; }
+
+.srvice-section {
+  background-color: #efefef;
+  color: #000; }
+  .srvice-section .sec-content {
+    display: grid; }
+  .srvice-section .quarter-box .box-title {
+    font-size: 43px;
+    font-weight: bold;
+    margin-bottom: 29px; }
+  .srvice-section .quarter-box .disc-box {
+    font-size: 20px;
+    color: #666565; }
+  .srvice-section .quarter-box .image img {
+    height: 100%;
+    border: 11px solid #4b4b4b80; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,151 @@
+@import "layout/vars";
+@import "layout/helpers";
+@import "header/header";
+@import "footer/footer";
+.slide-show{
+    text-align: center;
+    background-image: url(../img/anime-boys-urban-train-anime-wallpaper-preview.jpg);
+    background-size: cover;
+    height: 90vh;
+    .carousel-item{
+        padding: 50px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 90vh;
+        color: #FFF;
+        font-weight: bold;
+        font-size: 50px;
+        padding-top: 200px;
+         h3{
+         }p{
+            font-size: 40px;
+         }
+         .main-btn{
+             margin: 0 10px;
+             margin-top: 20px;
+         }
+    }
+}
+
+
+.section{
+    padding: 50px;
+    .sec-head{
+        text-align: center;
+        .sec-title{
+            font-size: 27px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }.sec-discription{
+            font-size: 20px;
+        }
+    }
+    &.feature-section{
+        .sec-content{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 40px;
+            text-align: center;
+            .quarter-box{
+                margin-top: 25px;
+                padding: 40px 6px;
+                box-shadow: 0 0 10px #eee;
+                .box-title{
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 49px;
+                }
+                .icon{
+                    background-color: $mainColor;
+                    color: #FFF;
+                    font-size: 25px;
+                    width: 50px;
+                    height: 50px;
+                    margin: 10px auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+       
+    }
+}
+
+.blog-section{
+    @extend .feature-section;
+    .quarter-box{
+        text-align: left;
+        padding: 0 0 !important;
+        padding-bottom: 30px !important;
+        .box-content{
+            padding: 10px;
+        }
+        .box-title{
+            font-size: 23px !important;
+        }
+    }
+    .image img{
+        width: 100%;
+    }
+}
+
+.team-section{
+    background-color: rgb(72, 76, 133);
+    color: #FFF;
+    padding: 100px 0 !important;
+    .box-title:first-of-type{
+        margin-bottom: 35px;
+        font-size: 25px;
+    }
+    .sec-head .sec-title{
+        margin-bottom: 65px;
+    }
+    .sec-content{
+        display: flex;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+        .box-title:not(:first-of-type){
+            text-align: center;
+            margin-top: 15px;
+            .name{ 
+                font-size: 18px;
+                font-weight: bold;
+            }
+        }
+        .quarter-box{
+            .image img{
+                width: 100%;
+            }
+            .main-btn{
+                margin-top: 15px;
+                padding: 5px 26px;
+                font-weight: normal;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.srvice-section{
+    @extend .team-section;
+    background-color: #efefef;
+    color: #000;
+    .sec-content{
+        display: grid;
+    }
+    .quarter-box{
+        .box-title{
+            font-size: 43px;
+            font-weight: bold;
+            margin-bottom: 29px;
+        }
+        .disc-box{
+            font-size: 20px;
+            color: #666565;
+        }
+        .image img{
+            height: 100%;
+            border: 11px solid #4b4b4b80;
+        }
+    }
+}

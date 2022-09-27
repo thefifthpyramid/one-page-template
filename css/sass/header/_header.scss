@@ -1,0 +1,29 @@
+.navBar{
+    background-color: #000;
+    color:#FFF;
+    .content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .margin-right{
+            ul{
+                min-width: 105px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+    
+}
+.main-header{
+    @extend .navBar;
+    background-color: rgba(0, 0, 0, 0.767);
+    .logo{
+        font-weight: bold;
+        font-size: 30px;
+    }
+    a{
+        font-size: 18px;
+    }
+}
